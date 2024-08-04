@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+</head>
+<body>
+    <form id="loginForm" action="/login" method="POST">
+        <h4>帳號：</h4>
+        <input id="acc" type="text" name="username" required>
+        <h4>密碼：</h4>
+        <input id="password" type="password" name="password" required>
+        <button type="button" onclick="generateMD5()">登入</button>
+    </form>
+    <p>沒有註冊嗎？<a href="/register.html">點此註冊</a></p>
+</body>
+</html>
