@@ -1,3 +1,2 @@
-*__pycache__
-*.rmv
-*.vscode
+.vscode
+__pycache__/
