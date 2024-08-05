@@ -1,7 +1,7 @@
- .sqlite # igonre SQL
+ *.sqlite # igonre SQL
 
- /__pycache__ #pycache路徑下的都不要
+ __pycache__ #pycache路徑下的都不要
 
- /.rmv
+ .rmv
 
- /.vscode
+ .vscode
