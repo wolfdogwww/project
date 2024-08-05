@@ -1,3 +1,8 @@
-.vscode
+# 忽略 .rmv 文件
+*.rmv
+
+# 忽略 .vscode 文件夹
+.vscode/
+
+# 忽略 __pycache__ 文件夹
 __pycache__/
-*.log text eol=lf
