@@ -353,3 +353,4 @@ Account{name=objects, path=E:/新增資料夾/loginproject/loginenv/env/project/
 2024-08-05 23:21:23.647 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.catalog.from.scan.CurrentPathScanner - [client:400205]scan file in current open file directory(E:/新增資料夾/loginproject/loginenv/env/project)
 2024-08-05 23:21:24.590 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.catalog.from.scan.CurrentPathScanner - [client:400205]scan file in current open file directory(E:/新增資料夾/loginproject/loginenv/env/project)
 2024-08-05 23:21:27.431 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.catalog.from.scan.CurrentPathScanner - [client:400205]scan file in current open file directory(E:/新增資料夾/loginproject/loginenv/env/project)
+2024-08-05 23:31:10.462 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.catalog.from.scan.CurrentPathScanner - [client:400205]scan file in current open file directory(E:/新增資料夾/loginproject/loginenv/env/project)
