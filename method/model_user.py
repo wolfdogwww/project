@@ -28,9 +28,11 @@ class User(db.Model):
         return '<User %r>' % self.username
 
 def create_user():
-    with app.app_context():
-        db.create_all()
-        print("All tables created")
+    if os.path.exists(file):
+        print("資料庫存在") #記得改成logging
+    else:   
+        with app.app_context():
+            db.create_all()
+            print("All tables created") # 記得改成 logging
         
 create_user()
-print(file)
