@@ -1,3 +1,4 @@
+#https://zx7978123.medium.com/python-logging-日誌管理教學-60be0a1a6005
 import logging
 
 def logsetup():
@@ -7,7 +8,7 @@ def logsetup():
 ''' 
     logging.debug('Hello Debug')
     logging.info('Hello info')
-    logging.warning('Hello WARNING')
+    logging.warning('Hello WARNING') 
     logging.error('Hello ERROR')
     logging.critical('Hello CRITICAL')
 '''
