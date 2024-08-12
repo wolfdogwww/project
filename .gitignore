@@ -9,3 +9,4 @@ __pycache__/
 
 # 忽略 method裡面的__pycache__ 文件夹
 /method/__pycache__
+/method/data.sqlite
