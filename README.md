@@ -20,15 +20,14 @@ main.py 主要是在做路由轉換以及調動資料的
 
 在method資料夾底下的model.py是在做資料庫創建的 使用的是"Flask-SQLAlchemy"
 
-
 ### 安裝database
 
-執行在 method資料夾底下的creat_db.py 就會引用model_user.py的資料庫格式自動創建資料庫
+執行在 method資料夾底下的model_user.py 就會依據USER裡面的格式去創建資料庫
+
+### LOG
+
+新增logsetup.py LOG 格式 = 時間 ,日誌等級數值,訊息
 
 ```python
-from model_user import db, app  
-
-with app.app_context():
-    db.create_all()
-    print("All tables created")
+format = %(asctime)s %(levelname)s: %(message)s
 ```

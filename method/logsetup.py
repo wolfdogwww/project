@@ -2,7 +2,7 @@
 import logging
 
 def logsetup():
-    FORMAT = '%(asctime)s %(levelname)s: %(message)s' #設定log檔案格式 tim ,日誌等級數值,訊息
+    FORMAT = '%(asctime)s %(levelname)s: %(message)s' #設定log檔案格式 time ,日誌等級數值,訊息
     logging.basicConfig(level=logging.DEBUG, filename='LOG.log',filemode='a',format=FORMAT)
 
 ''' 
