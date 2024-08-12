@@ -1,6 +1,10 @@
+import os
+import logging
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import os
+from logsetup import logsetup
+
+logsetup()
 #  取得目前文件資料夾路徑
 pjdir = os.path.abspath(os.path.dirname(__file__))
 
@@ -29,10 +33,9 @@ class User(db.Model):
 
 def create_user():
     if os.path.exists(file):
-        print("資料庫存在") #記得改成logging
+        logging.info("database already exists")
     else:   
         with app.app_context():
             db.create_all()
-            print("All tables created") # 記得改成 logging
-        
+            logging.info("database isn't exists creating database")
 create_user()
