@@ -4,7 +4,10 @@ from flask import Flask, render_template, request, jsonify
 import logging
 from method.logsetup import logsetup
 from method.model_user import create_user
+
 app = Flask(__name__) # __name__ 代表目前執行的模組
+logsetup()
+create_user()
 
 @app.route('/')
 def index():
@@ -22,8 +25,7 @@ def login():
     
     return render_template('login.html')
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     app.debug = True
     app.run()
-    create_user()
-    logsetup()
+

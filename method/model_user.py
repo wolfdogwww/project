@@ -1,8 +1,9 @@
+# https://blog.gtwang.org/programming/python-howto-check-whether-file-folder-exists/
 import os
 import logging
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from logsetup import logsetup
+from method.logsetup import logsetup
 
 logsetup()
 #  取得目前文件資料夾路徑
@@ -38,4 +39,5 @@ def create_user():
         with app.app_context():
             db.create_all()
             logging.info("database isn't exists creating database")
-create_user()
+            
+#create_user()

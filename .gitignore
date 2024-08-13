@@ -11,3 +11,4 @@ __pycache__/
 /method/__pycache__
 /method/data.sqlite
 /method/LOG.log
+LOG.log
