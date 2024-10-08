@@ -23,7 +23,7 @@ class User(db.Model):
     __tablename__ = 'Users'
     id = db.Column(db.String(80), primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
-    password = db.Column(db.String(120), unique=True, nullable=False)
+    password_hash  = db.Column(db.String(120), unique=True, nullable=False)
 
     def __init__(self, username, password):
         self.username = username
@@ -35,9 +35,9 @@ class User(db.Model):
 def create_user():
     if os.path.exists(file):
         logging.info("database already exists")
-    else:   
+    else:
         with app.app_context():
             db.create_all()
             logging.info("database isn't exists creating database")
-            
+
 #create_user()
